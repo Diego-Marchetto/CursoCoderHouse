@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: rgb(45, 45, 51);
+}
+
+/* NAVEGADOR */
+/* NAVEGADOR */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background-color: #141225;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    color: rgb(224, 222, 240);
+    padding: 20px 0px 20px 0px;
+    margin: 0px 40px 0px 40px;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+nav ul li a:hover{
+    color: gray;
+    transition: all 0.5s;
+}
+
+nav .redesnav .imgredes{
+    margin: 0px 10px 0px 10px;
+}
+
+.menu_responsive{ /* FALTA TERMINAR */
+    display: none;
+}
+
+/*CONTENEDOR PRINCIPAL*/
+/*CONTENEDOR PRINCIPAL*/
+.cont_responsive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.cont{
+    border-radius: 7px;
+    text-align: center;
+    margin: 80px 400px 80px 400px;
+    display: inline-block;
+    background-color: #141225;
+    color: #dfddef;
+    min-width: 650px;
+}
+
+.cont h1{
+    font-size: 3em;
+    margin: 30px 0px 30px 0px;
+}
+
+.cont .anuncio{
+    font-size: 3em;
+    margin: 30px 0px 30px 0px;   
+}
+
+.cont h2{
+    margin: 30px 0px 30px 0px;
+}
+
+.cont p{
+    text-decoration:overline;
+    color: #9f6cd1;
+    margin: 30px 0px 30px 0px;
+    font-size: 1.5em;
+}
+
+.cont h4{
+    margin: 30px 200px 30px 200px;
+    font-size: 1.1em;
+}
+
+.cont .violet{
+    color: #9f6cd1;
+}
+
+.cont img{
+    border-radius: 7px;
+    width: 70%;
+}
+
+/*STORE*/
+/*STORE*/
+.store{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #141225;
+    border-radius: 7px;
+    margin: 120px;
+    padding-bottom: 100px;
+}
+
+.store h1{
+    text-decoration:overline;
+    color: #9f6cd1;
+    margin: 30px 0px 30px 0px;
+    font-size: 1.5em;
+}
+
+.store p{
+    color: #9f6cd1;
+    margin: 30px 0px 30px 0px;
+}
+
+.store .list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 80px 0px 80px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(223, 221, 239, 0.1);
+    border-radius: 7px;
+    margin: 8px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(159, 108, 209,.7)
+}
+
+.items:hover{
+    box-shadow: 0 4px 20px rgba(159, 108, 209,.7);
+    transition: 0.3s;
+}
+
+.items p{
+    color: rgb(224, 222, 240);
+    margin: 10px;
+}
+
+.items .nameitem{
+    color: #9f6cd1;
+    width: 250px;
+}
+
+.store img{
+    margin: 20px;
+}
+
+/*VENTA*/
+/*VENTA*/
+.contredes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contredes .imgredes{
+    border: 0px;
+    width: 128px;
+    margin: 50px;
+}
+
+.contpagos{
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.contpagos .imgredes{
+    border: 0px;
+    width: 150px;
+    margin: 70px;
+}
+
+/*BOTONES*/
+/*BOTONES*/
+.gostore{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size:large;
+    padding: 10px 50px 10px 50px;
+    margin: 30px;
+    color: rgb(224, 222, 240);
+    background-color: rgba(159, 108, 209, 0.7);
+    border-radius: 7px;
+}
+
+.gostore:hover{
+    background-color: rgba(68, 47, 90, 0.7);
+    transition: all 0.5s;
+}
+
+.minibutton{
+    color: rgb(224, 222, 240);
+    background-color: rgba(159, 108, 209, 0.7);
+    border-radius: 7px;
+    padding: 10px 30px;
+    margin: 10px 0px 10px 0px;
+}
+
+.minibutton:hover{
+    background-color: rgba(68, 47, 90, 0.7);
+    transition: all 0.5s;
+}
+
+/*CONTACTO*/
+/*CONTACTO*/
+
+/*DECLARACION DE AREAS*/
+.info{
+    grid-area: info;
+}
+
+.datos{
+    grid-area: datos;
+    margin-top: 40px;
+}
+
+.redessociales{
+    grid-area: redessociales;
+    margin-right: 150px;
+}
+
+.ubicacion{
+    grid-area: ubicacion;
+    margin-top: 70px;
+}
+/*DECLARACION DE AREAS*/
+
+.cont-padre{
+    background-color: #141225;
+    color: #dfddef;
+    border-radius: 7px;
+    margin: 120px;
+    display: grid;
+    grid-template-areas: 
+    "info info"
+    "datos redessociales"
+    "ubicacion ubicacion"
+    ;
+}
+
+.cont-padre h1{
+    font-size: 3em;
+    margin: 30px 0px 30px 0px;
+    text-align: center;
+}
+
+.cont-padre p{
+    text-decoration:overline;
+    color: #9f6cd1;
+    margin: 30px 0px 30px 0px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.cont-padre h4{
+    margin: 30px 200px 30px 200px;
+    font-size: 1.1em;
+}
+
+.cont-padre .h4center{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea{
+    max-width: 1000px;
+    max-height: 300px;
+    min-width: 600px;
+    min-height: 300px;
+}
+
+.redessociales .contredes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redessociales .imgredes{
+    margin: 30px 0px 0px 0px;
+}
+
+.redessociales .contredes a{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*FOOTER*/
+/*FOOTER*/
+footer{
+    color: rgb(224, 222, 240);
+    background-color: #141225;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    bottom: 0;
+}
+
+footer p{
+    padding-top: 15px;
+}
+
+@media (max-width: 1280px){
+    .menu_responsive{
+        display: inline-block;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .contredes{
+        flex-direction: column;
+    }
+    .contredes .imgredes{
+        margin: 10px;
+    }
+
+    .contpagos .imgredes{
+        margin: 10px;
+    }
+
+    .cont h4{
+        margin: 30px 70px 30px 70px;
+        text-align: justify;
+    }
+
+    .cont .abonos{
+        text-align: center;
+    }
+
+    .cont-padre{
+        grid-template-areas: 
+        "info"
+        "datos"
+        "redessociales"
+        "ubicacion"
+        ;
+    }
+    
+    .redessociales{
+        margin: 0px;
+    }
+
+    .cont-padre h4{
+        text-align: justify;
+        margin: 20px 70px 20px 70px;
+    }
+
+    textarea{
+        max-width: 500px;
+        max-height: 2000px;
+        min-width: 500px;
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 650px){
+    nav{
+        justify-content: space-between;
+    }
+
+    .cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: 0px;
+    }
+
+    .cont-padre{
+        margin: 120px;
+        width: 100%;
+    }
+
+    .cont-padre h4{
+        margin: 20px 40px 20px 40px;
+    }
+
+    .cont h1{
+        margin: 30px 0px 30px 0px;
+    }
+    
+    .cont h4{
+        margin: 30px 10px 30px 10px;
+    }
+
+    .cont .anuncio{
+        margin: 30px 10px 30px 10px;
+        text-align: center;
+    }
+
+    .cont .contpagos{
+        justify-content: center;
+    }
+
+    textarea{
+        max-width: 400px;
+        max-height: 150px;
+        min-width: 400px;
+        min-height: 150px;
+    }
+
+    nav .redesnav{
+        display: none;
+    }
+}
