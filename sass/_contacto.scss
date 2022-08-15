@@ -1,0 +1,75 @@
+.cont-padre{
+    background-color: $colorcont;
+    color: $colorletra;
+    border-radius: 7px;
+    margin: 120px;
+    display: grid;
+    grid-template-areas: 
+    "info info"
+    "datos redessociales"
+    "ubicacion ubicacion"
+    ;
+    
+    .info{
+        grid-area: info;
+    }
+    
+    .datos{
+        grid-area: datos;
+        margin-top: 40px;
+    }
+    
+    .redessociales{
+        grid-area: redessociales;
+        margin-right: 150px;
+    }
+    
+    .ubicacion{
+        grid-area: ubicacion;
+        margin-top: 70px;
+    }
+
+    h1{
+        font-size: 3em;
+        margin: 30px 0px 30px 0px;
+        text-align: center;
+    }
+    p{
+        text-decoration:overline;
+        color: $coloracento;
+        margin: 30px 0px 30px 0px;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    h4{
+        margin: 30px 200px 30px 200px;
+        font-size: 1.1em;
+    }
+    .h4center{
+        text-align: center;
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    textarea{
+        max-width: 1000px;
+        max-height: 300px;
+        min-width: 600px;
+        min-height: 300px;
+    }
+    .minibutton{
+        color: $colorletra;
+        background-color: rgba(159, 108, 209, 0.7);
+        border-radius: 7px;
+        padding: 10px 30px;
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .minibutton:hover{
+        background-color: rgba(68, 47, 90, 0.7);
+        transition: all 0.5s;
+    }
+}

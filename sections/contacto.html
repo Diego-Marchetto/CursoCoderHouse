@@ -50,14 +50,14 @@
             <article class="datos">
             <form>
                 <label for="nombre_apellido">Nombre y Apellido</label>
-                <input type="text" name="nombre_apellido"/>
+                <input type="text" required="required" name="nombre_apellido"/>
                 <label for="email">Correo electronico</label>
-                <input type="email" name="email"/>
+                <input type="email" required="required" name="email"/>
                 <label for="observaciones">Ingrese sus dudas</label>
-                <textarea type="text" name="observaciones"></textarea>
-                <input class="minibutton" type="reset" value="BORRAR TODO">
+                <textarea type="text" required="required" name="observaciones"></textarea>
+                <input class="minibutton" required="required" type="reset" value="BORRAR TODO">
                 <div>Acepto los terminos y condiciones</div>
-                <input type="checkbox" name="acepta" value="1">
+                <input type="checkbox" required="required" name="acepta" value="1">
                 <input class="minibutton" type="submit" value="ENVIAR">
             </form>
             </article>
