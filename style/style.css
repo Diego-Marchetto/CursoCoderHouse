@@ -109,16 +109,14 @@ footer p {
   color: #dfddef;
   min-width: 650px;
 }
+.cont .extend, .cont p, .cont h2, .cont .anuncio, .cont h1 {
+  margin: 30px 0px 30px 0px;
+}
 .cont h1 {
   font-size: 3em;
-  margin: 30px 0px 30px 0px;
 }
 .cont .anuncio {
   font-size: 3em;
-  margin: 30px 0px 30px 0px;
-}
-.cont h2 {
-  margin: 30px 0px 30px 0px;
 }
 .cont h4 {
   margin: 30px 50px 30px 50px;
@@ -127,7 +125,6 @@ footer p {
 .cont p {
   text-decoration: overline;
   color: #9f6cd1;
-  margin: 30px 0px 30px 0px;
   font-size: 1.5em;
 }
 .cont .violet {
@@ -350,7 +347,7 @@ form .minibutton:hover {
   .cont .abonos {
     text-align: center;
   }
-  .cont + .imgtrade {
+  .cont .imgtrade {
     border-radius: 7px;
     width: 80%;
   }
@@ -378,6 +375,23 @@ form .minibutton:hover {
     max-height: 200px;
     min-width: 500px;
     min-height: 200px;
+  }
+  .store {
+    width: 100%;
+  }
+  .store .list {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .store .list .items {
+    width: 20%;
+  }
+  .store .list .items img {
+    width: 100%;
+  }
+  .store .list .items .nameitem {
+    font-size: 15px;
+    width: 100%;
   }
 }
 @media (max-width: 650px) {
@@ -407,8 +421,8 @@ form .minibutton:hover {
   .cont .contpagos {
     justify-content: center;
   }
-  .store {
-    width: 100%;
+  .store .list .items {
+    width: 40%;
   }
   .cont-padre {
     margin: 120px;

@@ -1,7 +1,7 @@
 .cont-padre{
     background-color: $colorcont;
     color: $colorletra;
-    border-radius: 7px;
+    @include border (7px);
     margin: 120px;
     display: grid;
     grid-template-areas: 
@@ -63,7 +63,7 @@ form{
     .minibutton{
         color: $colorletra;
         background-color: rgba(159, 108, 209, 0.7);
-        border-radius: 7px;
+        @include border (7px);
         padding: 10px 30px;
         margin: 10px 0px 10px 0px;
     }

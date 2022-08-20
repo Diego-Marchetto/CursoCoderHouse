@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     background-color: $colorcont;
-    border-radius: 7px;
+    @include border (7px);
     margin: 120px;
     padding-bottom: 100px;
     h1{
@@ -32,7 +32,7 @@
         flex-direction: column;
         align-items: center;
         background-color: rgba(223, 221, 239, 0.1);
-        border-radius: 7px;
+        @include border (7px);
         margin: 8px;
         text-align: center;
         box-shadow: 0 3px 6px rgba(159, 108, 209,.7);

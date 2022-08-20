@@ -44,7 +44,7 @@
         }
         .abonos{
             text-align: center;
-        }+
+        }
         .imgtrade{
             border-radius: 7px;
             width: 80%;
@@ -84,6 +84,24 @@
             min-height: 200px;
         }
     }
+
+    .store{
+        width: 100%;
+        .list{
+            margin-left: 10px;
+            margin-right: 10px;
+            .items{
+                width: 20%;
+                img{
+                    width: 100%;
+                }
+                .nameitem{
+                    font-size: 15px;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 650px){
@@ -118,7 +136,11 @@
     }
 
     .store{
-        width: 100%;
+        .list{
+            .items{
+                width: 40%;
+            }
+        }
     }
 
     .cont-padre{
