@@ -2,7 +2,7 @@
     background-color: $colorcont;
     color: $colorletra;
     @include border (7px);
-    margin: 120px;
+    margin: 50px 120px 50px 120px;
     display: grid;
     grid-template-areas: 
     "info info"
@@ -22,11 +22,23 @@
     .redessociales{
         grid-area: redessociales;
         margin-right: 150px;
+        .contredes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+        .imgredes{
+            margin: 30px 0px 0px 0px;
+        }
     }
     
     .ubicacion{
         grid-area: ubicacion;
-        margin-top: 70px;
+        margin-top: 30px;
     }
 
     h1{

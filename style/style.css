@@ -5,19 +5,20 @@
   font-family: "Lato", sans-serif;
 }
 
+/*VARIABLES*/
+/*VARIABLES*/
+/*NAVBAR*/
 body {
   background-color: rgb(45, 45, 51);
 }
 
-/*VARIABLES*/
-/*VARIABLES*/
-/*NAVBAR*/
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px;
   background-color: #141225;
+  z-index: 1000;
 }
 header .checkbtn {
   float: right;
@@ -39,6 +40,10 @@ header nav {
 }
 header nav .logo .imgredes {
   width: 60px;
+}
+header nav ul {
+  margin: 0px;
+  padding: 0px;
 }
 header nav li {
   display: inline-block;
@@ -97,20 +102,22 @@ footer p {
   padding-top: 15px;
 }
 
+/*CONTENEDOR PRINCIPAL*/
 .cont {
-  border-radius: 7px;
-  text-align: center;
-  width: 75%;
-  margin: 80px 0px 80px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 7px;
+  text-align: center;
+  width: 75%;
+  margin: 50px 0px 80px 0px;
   background-color: #141225;
   color: #dfddef;
   min-width: 650px;
+  /*BOTONES*/
 }
-.cont .extend, .cont p, .cont h2, .cont .anuncio, .cont h1 {
-  margin: 30px 0px 30px 0px;
+.cont .extend, .cont h2, .cont .anuncio, .cont h1 {
+  margin: 30px 0px 20px 0px;
 }
 .cont h1 {
   font-size: 3em;
@@ -125,6 +132,7 @@ footer p {
 .cont p {
   text-decoration: overline;
   color: #9f6cd1;
+  margin: 30px 0px 10px 0px;
   font-size: 1.5em;
 }
 .cont .violet {
@@ -155,17 +163,28 @@ footer p {
   color: #dfddef;
 }
 
-.redessociales .contredes {
+.cont .contredes {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.redessociales .contredes a {
-  margin: 0px;
-  padding: 0px;
+.cont .contredes .imgredes {
+  border: 0px;
+  width: 128px;
+  margin: 50px;
 }
-.redessociales .imgredes {
-  margin: 30px 0px 0px 0px;
+.cont .contpagos {
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 150px;
+}
+.cont .contpagos .imgredes {
+  border: 0px;
+  width: 150px;
+  margin: 30px;
 }
 
 .store {
@@ -180,7 +199,7 @@ footer p {
 .store h1 {
   text-decoration: overline;
   color: #9f6cd1;
-  margin: 30px 0px 30px 0px;
+  margin: 34px 0px 10px 0px;
   font-size: 1.5em;
 }
 .store p {
@@ -220,36 +239,11 @@ footer p {
   transition: 0.3s;
 }
 
-.contredes {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.contredes .imgredes {
-  border: 0px;
-  width: 128px;
-  margin: 50px;
-}
-
-.contpagos {
-  display: flex;
-  justify-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-left: 150px;
-  margin-right: 150px;
-}
-.contpagos .imgredes {
-  border: 0px;
-  width: 150px;
-  margin: 70px;
-}
-
 .cont-padre {
   background-color: #141225;
   color: #dfddef;
   border-radius: 7px;
-  margin: 120px;
+  margin: 50px 120px 50px 120px;
   display: grid;
   grid-template-areas: "info info" "datos redessociales" "ubicacion ubicacion";
 }
@@ -264,9 +258,21 @@ footer p {
   grid-area: redessociales;
   margin-right: 150px;
 }
+.cont-padre .redessociales .contredes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cont-padre .redessociales .contredes a {
+  margin: 0px;
+  padding: 0px;
+}
+.cont-padre .redessociales .imgredes {
+  margin: 30px 0px 0px 0px;
+}
 .cont-padre .ubicacion {
   grid-area: ubicacion;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 .cont-padre h1 {
   font-size: 3em;
@@ -312,6 +318,14 @@ form .minibutton:hover {
 }
 
 @media (max-width: 1280px) {
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  header nav {
+    justify-content: space-between;
+  }
   header nav .checkbtn {
     display: block;
   }
@@ -327,7 +341,7 @@ form .minibutton:hover {
     background-color: rgb(45, 45, 51);
     width: 100%;
     height: 100vh;
-    top: 81px;
+    top: 80px;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
@@ -340,6 +354,9 @@ form .minibutton:hover {
   header nav ul li a {
     margin-bottom: 20px;
   }
+  .cont {
+    margin-top: 100px;
+  }
   .cont h4 {
     margin: 30px 70px 30px 70px;
     text-align: justify;
@@ -350,6 +367,9 @@ form .minibutton:hover {
   .cont .imgtrade {
     border-radius: 7px;
     width: 80%;
+  }
+  .cont .anuncio {
+    margin: 30px 20px 30px 20px;
   }
   .cont .contredes {
     flex-direction: column;
@@ -362,9 +382,13 @@ form .minibutton:hover {
   }
   .cont-padre {
     grid-template-areas: "info" "datos" "redessociales" "ubicacion";
+    margin-top: 100px;
   }
   .cont-padre .redessociales {
     margin: 0px;
+  }
+  .cont-padre .redessociales .imgredes {
+    margin: 10px;
   }
   .cont-padre h4 {
     text-align: justify;
@@ -395,9 +419,6 @@ form .minibutton:hover {
   }
 }
 @media (max-width: 650px) {
-  header nav {
-    justify-content: space-between;
-  }
   header nav .redesnav {
     display: none;
   }
@@ -408,8 +429,13 @@ form .minibutton:hover {
     width: 100%;
     min-width: 0px;
   }
+  .cont .gostore {
+    font-size: medium;
+    padding: 10px 80px 10px 80px;
+  }
   .cont h1 {
     margin: 30px 0px 30px 0px;
+    font-size: 2em;
   }
   .cont h4 {
     margin: 30px 10px 30px 10px;
@@ -420,6 +446,11 @@ form .minibutton:hover {
   }
   .cont .contpagos {
     justify-content: center;
+    margin: 15px;
+  }
+  .cont .contpagos .imgredes {
+    width: 100px;
+    margin: 15px;
   }
   .store .list .items {
     width: 40%;

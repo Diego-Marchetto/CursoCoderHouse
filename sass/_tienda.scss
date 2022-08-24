@@ -9,7 +9,7 @@
     h1{
         text-decoration:overline;
         color: $coloracento;
-        margin: 30px 0px 30px 0px;
+        margin: 34px 0px 10px 0px;
         font-size: 1.5em;
     }
     p{
@@ -26,7 +26,6 @@
     img{
         margin: 20px;
     }
-
     .items{
         display: flex;
         flex-direction: column;
@@ -44,11 +43,9 @@
             color: $coloracento;
             width: 250px;
         }
-    }
-    
+    }    
     .items:hover{
         box-shadow: 0 4px 20px rgba(159, 108, 209,.7);
         transition: 0.3s;
-    }
-    
+    }  
 }

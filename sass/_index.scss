@@ -2,20 +2,21 @@
     border-radius: $border;
 }
 
+/*CONTENEDOR PRINCIPAL*/
 .cont{
-    @include border (7px);
-    text-align: center;
-    width: 75%;
-    margin: 80px 0px 80px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include border (7px);
+    text-align: center;
+    width: 75%;
+    margin: 50px 0px 80px 0px;
     background-color: $colorcont;
     color: $colorletra;
     min-width: 650px;
 
     .extend{
-        margin: 30px 0px 30px 0px;
+        margin: 30px 0px 20px 0px;
     }
 
     h1{
@@ -40,7 +41,7 @@
     p{
         text-decoration:overline;
         color: $coloracento;
-        @extend .extend;
+        margin: 30px 0px 10px 0px;
         font-size: 1.5em;
     }
 
@@ -56,6 +57,7 @@
         @include border (7px);
         width: 50%;
     }
+    /*BOTONES*/
     .gostore{
         text-decoration: none;
         display: inline-block;
