@@ -2,8 +2,10 @@
     background-color: $colorcont;
     color: $colorletra;
     @include border (7px);
-    margin: 50px 120px 50px 120px;
+    width: 85%;
+    margin: 50px 0px 80px 0px;
     display: grid;
+    text-align: center;
     grid-template-areas: 
     "info info"
     "datos redessociales"
@@ -53,13 +55,19 @@
         font-size: 1.5em;
         text-align: center;
     }
-    h4{
-        margin: 30px 200px 30px 200px;
-        font-size: 1.1em;
+    .text{
+        text-decoration:none;
+        color: $colorletra;
+        margin: 20px 100px 20px 100px;
+        font-size: 1.2em;
     }
     .h4center{
         text-align: center;
+        text-decoration:none;
+        color: $colorletra;
+        font-size: 1.1em;
     }
+
 }
 
 form{

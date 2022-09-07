@@ -16,10 +16,17 @@
         justify-content: space-between;
         margin-left: 100px;
         margin-right: 150px;
-        .imgredes{
-            border: 0px;
-            width: 150px;
-            margin: 30px;
+        width: 80%;
+        .mediopago{
+            display: flex;
+            align-items: center;
+            width: 135px;
+            height: 135px;
+            .imgredes{
+                border: 0px;
+                width: 100%;
+            }
         }
+
     } 
 }

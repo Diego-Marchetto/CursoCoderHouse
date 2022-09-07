@@ -162,18 +162,21 @@
             }
         }
     }
-
     .cont-padre{
-        margin: 120px;
+        margin: 120px 0px 120px 0px;
+        min-width: 270px;
         width: 100%;
-        h4{
-            margin: 20px 40px 20px 40px;
+        .redessociales{
+            margin-right: 0px;
+        }
+        .text{
+            margin: 20px 0px 20px 0px;
         }
         textarea{
-            max-width: 400px;
-            max-height: 150px;
-            min-width: 400px;
-            min-height: 150px;
+            max-width: 200px;
+            max-height: 200px;
+            min-width: 200px;
+            min-height: 200px;
         }
     }
 }

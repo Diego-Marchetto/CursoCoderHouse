@@ -23,17 +23,19 @@
         font-size: 3em;
         @extend .extend;
     }
-
+    
     .anuncio{
         font-size: 3em;
         @extend .extend;  
     }
 
-    h2{
+    .sub{
         @extend .extend;
+        font-size: 1.9em;
+        text-decoration:underline;
     }
 
-    h4{
+    .text{
         margin: 30px 50px 30px 50px;
         font-size: 1.1em;
     }
